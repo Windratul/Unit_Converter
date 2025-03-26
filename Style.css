@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior:smooth;
+    scroll-snap-type: y mandatory;
+    font-size:62.5%;
+}
+body{
+    width:100vw;
+    height:90vh;
+    background:#2e2e45;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+#heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:2.5rem;
+}
+#heading>h1{
+    font:normal normal bold 5rem arial;
+    text-transform:uppercase;
+    color:white;
+}
+#heading>h6{
+    font:normal normal bold 3rem arial;
+    color:white;
+    text-decoration: underline;
+    text-underline-offset: 1.2rem;
+}
+#parent{
+    width:50%;
+    height:30rem;
+    padding:2rem;
+    background:lightgreen;
+    border-radius:2rem;
+    box-shadow:inset 0rem 0rem .8rem black;
+    font:normal normal bold 2.5rem arial;
+    text-align:center;
+    text-transform:uppercase;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:5rem;
+    position: relative;
+}
+
+#parent div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center; 
+    gap:1rem;
+}
+#parent div h1{
+    transform:translateY(2rem)
+}
+input{
+    width:28rem;
+    height:4rem;
+    font:normal normal bold 2.5rem arial;
+    text-align:center;
+    outline:none;
+    border-radius:.5rem;
+}
